@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1 style="color: red; text-align: center;">Html to servlet using JavaScript</h1>
+	
+	<form name="frm" action="capitalurl" method="GET">
+		
+		Select Country::
+		<select name="country" onchange="send()">
+			<option value="-1" selected>--Select Value--</option>
+			<option value="0" selected>India</option>
+			<option value="1" selected>Pakistan</option>
+			<option value="2" selected>USA</option>
+			<option value="3" selected>China</option>
+		</select>
+	</form>
+	
+	<script>
+		function send() {
+			frm.submit();
+		}
+	</script>
+
+</body>
+</html>
